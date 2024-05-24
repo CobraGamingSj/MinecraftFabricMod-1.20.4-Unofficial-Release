@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraftmod:energy_ingot"
+    },
+    "a": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " a "
+  ],
+  "result": {
+    "item": "minecraftmod:one_hit_sword"
+  }
+}

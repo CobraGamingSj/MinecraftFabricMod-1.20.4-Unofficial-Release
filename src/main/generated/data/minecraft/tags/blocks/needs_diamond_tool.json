@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraftmod:ruby_block",
+    "minecraftmod:radiant_block",
+    "minecraftmod:sapphire_block",
+    "minecraftmod:green_sapphire_block",
+    "minecraftmod:ruby_ore",
+    "minecraftmod:deepslate_ruby_ore",
+    "minecraftmod:blue_garnet_block",
+    "minecraftmod:blue_garnet_ore",
+    "minecraftmod:deepslate_blue_garnet_ore",
+    "minecraftmod:pink_garnet_block",
+    "minecraftmod:pink_garnet_ore",
+    "minecraftmod:deepslate_pink_garnet_ore"
+  ]
+}

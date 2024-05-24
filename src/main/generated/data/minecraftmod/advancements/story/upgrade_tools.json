@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "ruby_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmod:ruby_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Craft a Ruby Pickaxe"
+    },
+    "icon": {
+      "item": "minecraftmod:ruby_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Getting more Upgrades!"
+    },
+    "background": "minecraftmod:textures/gui/advancements/backgrounds/ruby_gem.png",
+    "frame": "goal"
+  },
+  "requirements": [
+    [
+      "ruby_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "minecraftmod:story/mine_sapphire",
+  "criteria": {
+    "one_hit": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmod:one_hit_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Craft the most powerful Sword"
+    },
+    "icon": {
+      "item": "minecraftmod:energy_ingot",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Invincible!",
+      "bold": true
+    },
+    "frame": "challenge"
+  },
+  "requirements": [
+    [
+      "one_hit"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

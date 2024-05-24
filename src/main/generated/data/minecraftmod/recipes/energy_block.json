@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraftmod:ruby_block"
+    },
+    "b": {
+      "item": "minecraftmod:radiant_block"
+    },
+    "c": {
+      "item": "minecraftmod:sapphire_block"
+    },
+    "d": {
+      "item": "minecraft:obsidian"
+    },
+    "e": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "f": {
+      "item": "minecraftmod:green_sapphire_block"
+    },
+    "g": {
+      "item": "minecraftmod:blue_garnet_block"
+    },
+    "h": {
+      "item": "minecraftmod:pink_garnet_block"
+    }
+  },
+  "pattern": [
+    "abc",
+    "ded",
+    "fgh"
+  ],
+  "result": {
+    "item": "minecraftmod:energy_block"
+  }
+}

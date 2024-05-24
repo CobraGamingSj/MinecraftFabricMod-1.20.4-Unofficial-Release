@@ -1,0 +1,34 @@
+{
+  "parent": "minecraftmod:story/upgrade_tools",
+  "criteria": {
+    "iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraftmod:sapphire"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "text": "Get an Sapphire"
+    },
+    "icon": {
+      "item": "minecraftmod:sapphire"
+    },
+    "title": {
+      "text": "Wow! So, Shiny"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+    [
+      "iron"
+    ]
+  ]
+}

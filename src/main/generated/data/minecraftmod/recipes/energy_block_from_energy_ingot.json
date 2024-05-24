@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa ",
+    "aa ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraftmod:energy_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraftmod:energy_block"
+  }
+}

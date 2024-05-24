@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraftmod:sapphire"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "a a",
+    "   "
+  ],
+  "result": {
+    "item": "minecraftmod:sapphire_helmet"
+  }
+}
