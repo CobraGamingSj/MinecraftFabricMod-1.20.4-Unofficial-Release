@@ -24,6 +24,7 @@ public class MinecraftMod implements ModInitializer {
 	public static final Item GREEN_SAPPHIRE = new Item(new Item.Settings());
 	public static final Item PINK_GARNET = new Item(new Item.Settings());
 	public static final Item BLUE_GARNET = new Item(new Item.Settings());
+	public static final Item TOPAZ = new Item(new Item.Settings());
 
 	public static final Block ENERGY_BLOCK = new EnergyBlock(AbstractBlock.Settings.create().mapColor(MapColor.BLUE).requiresTool().strength(6f, 7f).strength(8f));
 	public static final Block RUBY_BLOCK = new EnergyBlock(AbstractBlock.Settings.create().mapColor(MapColor.DARK_RED).requiresTool().strength(5f, 5f).strength(5f));
@@ -32,6 +33,7 @@ public class MinecraftMod implements ModInitializer {
 	public static final Block GREEN_SAPHIRE_BLOCK = new EnergyBlock(AbstractBlock.Settings.create().mapColor(MapColor.GREEN).requiresTool().strength(4f, 4f).strength(4f));
 	public static final Block BLUE_GARNET_BLOCK = new EnergyBlock(AbstractBlock.Settings.create().mapColor(MapColor.BLUE).requiresTool().strength(6f, 6.5f).strength(7f));
 	public static final Block PINk_GARNET_BLOCK = new EnergyBlock(AbstractBlock.Settings.create().mapColor(MapColor.PINK).requiresTool().strength(6f, 6.5f).strength(7f));
+	public static final Block TOPAZ_BLOCK = new Block(AbstractBlock.Settings.create().mapColor(MapColor.ORANGE).requiresTool().strength(8f, 8f).strength(9f));
 
 	public static final Item ENERGY_INGOT = new Item(new Item.Settings());
 
@@ -49,6 +51,7 @@ public class MinecraftMod implements ModInitializer {
 				entries.add(GREEN_SAPPHIRE);
 				entries.add(BLUE_GARNET);
 				entries.add(PINK_GARNET);
+				entries.add(TOPAZ);
 			}).build();
 
 	@Override
@@ -61,6 +64,7 @@ public class MinecraftMod implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "blue_garnet"), BLUE_GARNET);
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "pink_garnet"), PINK_GARNET);
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "energy_ingot"), ENERGY_INGOT);
+		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "topaz"), TOPAZ);
 
 		Registry.register(Registries.ITEM_GROUP, new Identifier("minecraftmod", "gemstones"), GEMSTONES);
 
@@ -73,6 +77,7 @@ public class MinecraftMod implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier("minecraftmod", "green_sapphire_block"), GREEN_SAPHIRE_BLOCK);
 		Registry.register(Registries.BLOCK, new Identifier("minecraftmod", "blue_garnet_block"), BLUE_GARNET_BLOCK);
 		Registry.register(Registries.BLOCK, new Identifier("minecraftmod", "pink_garnet_block"), PINk_GARNET_BLOCK);
+		Registry.register(Registries.BLOCK, new Identifier("minecraftmod", "topaz_block"), TOPAZ_BLOCK);
 
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "energy_block"), new BlockItem(ENERGY_BLOCK, new Item.Settings()));
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "ruby_block"), new BlockItem(RUBY_BLOCK, new Item.Settings()));
@@ -81,6 +86,7 @@ public class MinecraftMod implements ModInitializer {
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "green_sapphire_block"), new BlockItem(GREEN_SAPHIRE_BLOCK, new Item.Settings()));
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "blue_garnet_block"), new BlockItem(BLUE_GARNET_BLOCK, new Item.Settings()));
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "pink_garnet_block"), new BlockItem(PINk_GARNET_BLOCK, new Item.Settings()));
+		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "topaz_block"), new BlockItem(TOPAZ_BLOCK, new Item.Settings()));
 
 		Registry.register(Registries.ITEM, new Identifier("minecraftmod", "smithing_template"), SMITHING_TEMPLATE);
 
@@ -95,6 +101,7 @@ public class MinecraftMod implements ModInitializer {
 			items.addAfter(SAPPHIRE, GREEN_SAPPHIRE);
 			items.addAfter(GREEN_SAPPHIRE, BLUE_GARNET);
 			items.addAfter(BLUE_GARNET, PINK_GARNET);
+			items.addAfter(PINK_GARNET, TOPAZ);
 		});
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(FunctionBlocks -> {

@@ -6,6 +6,7 @@
   "item.minecraftmod.green_sapphire": "Green Sapphire",
   "item.minecraftmod.blue_garnet": "Blue Garnet",
   "item.minecraftmod.pink_garnet": "Pink Garnet",
+  "item.minecraftmod.topaz": "Topaz",
 
   "block.minecraftmod.energy_block": "Energy Block",
   "block.minecraftmod.ruby_block": "Ruby Block",
@@ -14,6 +15,7 @@
   "block.minecraftmod.green_sapphire_block": "Green Sapphire Block",
   "block.minecraftmod.blue_garnet_block": "Blue Garnet Block",
   "block.minecraftmod.pink_garnet_block": "Pink Garnet Block",
+  "block.minecraftmod.topaz_block": "Topaz Block",
 
   "item.minecraftmod.smithing_template": "Smithing Template",
 
